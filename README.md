@@ -1,7 +1,7 @@
 # SE4458 Midterm
 
 - SE4458 midterm airline company api.
-- swagger: 
+- swagger: /swagger/index.html
 - presentation video link: 
 
 # Endpoints
