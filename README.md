@@ -2,7 +2,7 @@
 
 - SE4458 midterm airline company api.
 - swagger: /swagger/index.html
-- presentation video link: https://drive.google.com/file/d/1Kq3IzUdGUwGK6QN7gt_tm5KWrqpPAlVH/view?usp=drive_link
+- presentation video link: https://drive.google.com/file/d/1Kq3IzUdGUwGK6QN7gt_tm5KWrqpPAlVH/view?usp=sharing
 
 # Endpoints
 - /api/v1.0/flight/querryFlight
