@@ -62,7 +62,6 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
 
     private bool IsValidUser(string username, string password)
     {
-        // Replace this with your user validation logic (e.g., check against a database)
-        return username == "admin" && password == "password";
+                return username == "admin" && password == "password";
     }
 }
