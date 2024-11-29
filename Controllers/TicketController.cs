@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {   
-    [Route("api/ticket")]
+    [Route("api/v1.0/ticket")]
     [ApiController]
     public class TicketController : ControllerBase
         {

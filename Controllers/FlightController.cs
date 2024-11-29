@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
-    [Route("api/flight")]
+    [Route("api/v1.0/flight")]
     [ApiController]
     public class FlightController: ControllerBase
     {
