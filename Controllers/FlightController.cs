@@ -6,6 +6,7 @@ using api.Data;
 using api.DTOs;
 using api.Mappers;
 using api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +35,7 @@ namespace api.Controllers
         }
 
         [HttpPost("insertFlight")]
+        [Authorize]
         // TODO  auth
         public async Task <ActionResult> InsertFlight([FromBody] FlightPostDto flightPostDto){
             var flightModel = flightPostDto.flightPostDto();
@@ -48,6 +50,7 @@ namespace api.Controllers
 
 
         [HttpGet("AdminQuerry")]
+        [Authorize]
         // TODO paging & auth
         public async Task<IActionResult> FlightsWithCapacity(int page= 1, int pageSize = 3){
            var totalFlights = await _context.Flights.CountAsync(Flight=>Flight.AvailableSeats > 0);
